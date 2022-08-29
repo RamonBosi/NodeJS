@@ -1,0 +1,33 @@
+{
+  "name": "loja-sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js localhost 4000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "module-alias": "^2.2.2",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "_moduleAliases": {
+    "@configs": "./src/configs/config.json",
+    "@controllers": "./src/controllers",
+    "@utilsControllers": "./src/controllers/utils",
+    "@models": "./src/models",
+    "@routes": "./src/routes",
+    "@database": "./src/database",
+    "@utils": "./src/utils",
+    "@middlewares": "./src/middlewares"
+  }
+}
